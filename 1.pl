@@ -1,4 +1,3 @@
-% Минимальная версия
 reverse_number(N, RevN) :-
     reverse_number_acc(N, 0, RevN).
 
@@ -10,7 +9,6 @@ reverse_number_acc(N, Acc, RevN) :-
     NewAcc is Acc * 10 + LastDigit,
     reverse_number_acc(N1, NewAcc, RevN).
 
-% Запуск
 start :-
     write('Введите число: '),
     read(N),
