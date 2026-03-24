@@ -14,8 +14,7 @@
 Предикат reverse_number/2 запускает рекурсивный процесс, обнуляя аккумулятор. На каждом шаге reverse_number_acc/3 извлекает последнюю цифру числа (LastDigit = N mod 10) и отсекает её (N1 = N // 10). Накопленное значение формируется путём сдвига предыдущего результата влево и добавления новой цифры (NewAcc = Acc * 10 + LastDigit). Рекурсия продолжается, пока исходное число не станет равным нулю. В терминальном случае аккумулятор, содержащий перевёрнутое число, возвращается как итоговый результат. Предикат start обеспечивает ввод числа с клавиатуры, вызов реверса и вывод полученного значения.
 **Тестирование**
 
-![Скриншот](https://github.com/EnotKommunist/Laba4/blob/main/Screenshot%202026-03-16%20203309.png)
-![Скриншот](https://github.com/EnotKommunist/Laba4/blob/main/Screenshot%202026-03-16%20203352.png)
+![Скриншот](https://github.com/EnotKommunist/lab_prolog/blob/main/Screenshot%202026-03-24%20080415.png)
 
 **Задание 2**
 
@@ -32,7 +31,7 @@
 
 **Тестирование**
 
-![Скриншот](https://github.com/EnotKommunist/Laba4/blob/main/image.png)
+![Скриншот](https://github.com/EnotKommunist/lab_prolog/blob/main/Screenshot%202026-03-24%20080549.png)
 
 **Задание 3**
 
@@ -49,7 +48,7 @@
 
 **Тестирование**
 
-![Скриншот](https://github.com/EnotKommunist/Laba4/blob/main/image.png)
+![Скриншот](https://github.com/EnotKommunist/lab_prolog/blob/main/Screenshot%202026-03-24%20080647.png)
 
 **Задание 4**
 
@@ -71,7 +70,7 @@
 
 **Тестирование**
 
-![Скриншот](https://github.com/EnotKommunist/Laba4/blob/main/image.png)
+![Скриншот](https://github.com/EnotKommunist/lab_prolog/blob/main/Screenshot%202026-03-24%20081618.png)
 
 
 
