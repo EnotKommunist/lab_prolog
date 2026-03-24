@@ -1,4 +1,3 @@
-% Факты
 color(blue).
 color(black).
 color(red).
@@ -6,7 +5,6 @@ make(buick).
 make(chrysler).
 make(ford).
 
-% Основной предикат решения
 solve(Color, Make) :-
     color(Color),
     make(Make),
