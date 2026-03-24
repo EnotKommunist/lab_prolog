@@ -14,7 +14,6 @@ max_consecutive_positive([H|T], Current, Global, Max) :-
     NewGlobal is max(Current, Global),
     max_consecutive_positive(T, 0, NewGlobal, Max).
 
-% Простой запуск
 start :-
     write('Введите список (например, [1,2,-3,4,5]): '),
     read(List),
