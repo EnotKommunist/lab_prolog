@@ -12,30 +12,21 @@ solve(Color, Make) :-
     make(Make),
     
     % Браун: синий Бьюик - ровно одно верно
-    (   (Color = blue, Make \= buick)
-    ;   (Color \= blue, Make = buick)
+    ( (Color = blue, Make \= buick)
+    ; (Color \= blue, Make = buick)
     ),
     
     % Джонс: черный Крайслер - ровно одно верно
-    (   (Color = black, Make \= chrysler)
-    ;   (Color \= black, Make = chrysler)
+    ( (Color = black, Make \= chrysler)
+    ; (Color \= black, Make = chrysler)
     ),
     
     % Смит: Форд и НЕ синий - ровно одно верно
-    (   (Make = ford, Color \= blue)
-    ;   (Make \= ford, Color \= blue)
+    ( (Make = ford, Color = blue)      % марка Ford верна, цвет синий (неверно, что не синий)
+    ; (Make \= ford, Color \= blue)    % марка не Ford, цвет не синий (верно второе утверждение)
     ).
 
-% Запуск с вводом
+% Запуск
 start :-
-    write('Введите цвет (blue, black, red): '),
-    read(Color),
-    write('Введите марку (buick, chrysler, ford): '),
-    read(Make),
-    nl,
-    (   solve(Color, Make)
-    ->  write('Правильно! '),
-        write('Автомобиль был '), write(Color), write(' '), write(Make), nl,
-    ;   write('Неправильно! '),
-        write('При таких показаниях условия задачи не выполняются.'), nl
-    ).
+    solve(Color, Make),
+    write('Автомобиль был '), write(Color), write(' '), write(Make), nl.
