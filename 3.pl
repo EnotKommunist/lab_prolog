@@ -1,4 +1,3 @@
-% Упрощенная версия
 complement(U, A, Complement) :-
     subtract(U, A, Complement).
 
@@ -10,7 +9,6 @@ subtract([H|T], A, Result) :-
 subtract([H|T], A, [H|Result]) :-
     subtract(T, A, Result).
 
-% Простой запуск
 start :-
     write('Введите универсум U: '),
     read(U),
